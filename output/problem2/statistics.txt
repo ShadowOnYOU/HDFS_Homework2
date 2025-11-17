@@ -1,0 +1,10 @@
+input_files	1
+processing_time	99779
+total_words	54591717
+unique_words	248505
+combiner_input_records	55456685
+combiner_output_records	1248862
+partition_0_records	90564
+partition_1_records	57242
+partition_2_records	77866
+partition_3_records	22833

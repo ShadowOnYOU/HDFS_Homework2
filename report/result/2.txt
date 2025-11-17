@@ -1,0 +1,174 @@
+(base) shadowonyou@shiguohaodeMacBook-Air HDFS_Homework2 % cp /Users/shadowonyou
+/2025研一上/大数据理论与实践/HDFS_Homework2/target/hadoop-mapreduce-assignment-1
+.0-SNAPSHOT.jar /Users/shadowonyou/Desktop/java_code/hadoop-assignment.jar
+(base) shadowonyou@shiguohaodeMacBook-Air HDFS_Homework2 % docker exec -it hadoo
+p-client bash
+hadoop@8daef4e3d21e:~$ cd /home/hadoop/java_code && hadoop jar hadoop-mapreduce-assignment-1.0-SNAPSHOT.jar com.bigdata.assignment.problem2.WordCountWithPerformanceDriver /public/data/wordcount/all_books_merged.txt /user/s522025320139/homework1/problem2 true
+WARNING: log4j.properties is not found. HADOOP_CONF_DIR may be incomplete.
+=== WordCount with Performance Analysis ===
+Input path: /public/data/wordcount/all_books_merged.txt
+Output path: /user/s522025320139/homework1/problem2
+Combiner enabled: true
+Start time: Mon Nov 17 07:32:58 GMT 2025
+==========================================
+2025-11-17 07:32:58,773 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(60)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Combiner enabled: WordCountCombiner
+Deleting existing output directory: /user/s522025320139/homework1/problem2
+2025-11-17 07:32:59,138 INFO  [main] client.DefaultNoHARMFailoverProxyProvider (DefaultNoHARMFailoverProxyProvider.java:init(64)) - Connecting to ResourceManager at hadoop-master/172.19.240.155:8032
+2025-11-17 07:32:59,273 WARN  [main] mapreduce.JobResourceUploader (JobResourceUploader.java:uploadResourcesInternal(149)) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2025-11-17 07:32:59,296 INFO  [main] mapreduce.JobResourceUploader (JobResourceUploader.java:disableErasureCodingForPath(907)) - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/s522025320139/.staging/job_1762952674918_2363
+2025-11-17 07:33:05,541 INFO  [main] input.FileInputFormat (FileInputFormat.java:listStatus(302)) - Total input files to process : 1
+2025-11-17 07:33:05,934 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:submitJobInternal(203)) - number of splits:3
+2025-11-17 07:33:06,373 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(299)) - Submitting tokens for job: job_1762952674918_2363
+2025-11-17 07:33:06,374 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(300)) - Executing with tokens: []
+2025-11-17 07:33:06,537 INFO  [main] conf.Configuration (Configuration.java:getConfResourceAsInputStream(2898)) - resource-types.xml not found
+2025-11-17 07:33:06,538 INFO  [main] resource.ResourceUtils (ResourceUtils.java:addResourcesFileToConf(476)) - Unable to find 'resource-types.xml'.
+2025-11-17 07:33:06,583 INFO  [main] impl.YarnClientImpl (YarnClientImpl.java:submitApplication(356)) - Submitted application application_1762952674918_2363
+2025-11-17 07:33:06,607 INFO  [main] mapreduce.Job (Job.java:submit(1681)) - The url to track the job: http://hadoop-master:8088/proxy/application_1762952674918_2363/
+2025-11-17 07:33:06,607 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1726)) - Running job: job_1762952674918_2363
+2025-11-17 07:33:26,230 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1747)) - Job job_1762952674918_2363 running in uber mode : false
+2025-11-17 07:33:26,231 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 0% reduce 0%
+2025-11-17 07:33:47,859 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 10% reduce 0%
+2025-11-17 07:33:54,009 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 14% reduce 0%
+2025-11-17 07:33:59,134 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 21% reduce 0%
+2025-11-17 07:34:05,298 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 27% reduce 0%
+2025-11-17 07:34:11,450 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 31% reduce 0%
+2025-11-17 07:34:13,496 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 44% reduce 0%
+2025-11-17 07:34:17,613 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 47% reduce 0%
+2025-11-17 07:34:19,650 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 52% reduce 0%
+2025-11-17 07:34:23,741 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 58% reduce 0%
+2025-11-17 07:34:25,837 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 73% reduce 0%
+2025-11-17 07:34:29,930 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 78% reduce 0%
+2025-11-17 07:34:31,992 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 100% reduce 0%
+2025-11-17 07:34:36,091 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 100% reduce 25%
+2025-11-17 07:34:43,259 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 100% reduce 50%
+2025-11-17 07:34:47,383 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 100% reduce 100%
+2025-11-17 07:34:48,445 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1765)) - Job job_1762952674918_2363 completed successfully
+2025-11-17 07:34:48,559 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1772)) - Counters: 70
+        File System Counters
+                FILE: Number of bytes read=22147974
+                FILE: Number of bytes written=26206929
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=322883072
+                HDFS: Number of bytes written=2789164
+                HDFS: Number of read operations=29
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=8
+                HDFS: Number of bytes read erasure-coded=0
+        Job Counters 
+                Killed map tasks=1
+                Killed reduce tasks=1
+                Launched map tasks=3
+                Launched reduce tasks=5
+                Data-local map tasks=1
+                Rack-local map tasks=2
+                Total time spent by all maps in occupied slots (ms)=307264
+                Total time spent by all reduces in occupied slots (ms)=62726
+                Total time spent by all map tasks (ms)=153632
+                Total time spent by all reduce tasks (ms)=31363
+                Total vcore-milliseconds taken by all map tasks=153632
+                Total vcore-milliseconds taken by all reduce tasks=31363
+                Total megabyte-milliseconds taken by all map tasks=157319168
+                Total megabyte-milliseconds taken by all reduce tasks=32115712
+        Map-Reduce Framework
+                Map input records=6675055
+                Map output records=54591717
+                Map output bytes=515653676
+                Map output materialized bytes=5672962
+                Input split bytes=399
+                Combine input records=55456685
+                Combine output records=1248862
+                Reduce input groups=248505
+                Reduce shuffle bytes=5672962
+                Reduce input records=383894
+                Reduce output records=248505
+                Spilled Records=1632756
+                Shuffled Maps =12
+                Failed Shuffles=0
+                Merged Map outputs=12
+                GC time elapsed (ms)=2700
+                CPU time spent (ms)=164730
+                Physical memory (bytes) snapshot=2917294080
+                Virtual memory (bytes) snapshot=17956511744
+                Total committed heap usage (bytes)=2551709696
+                Peak Map Physical memory (bytes)=648531968
+                Peak Map Virtual memory (bytes)=2570309632
+                Peak Reduce Physical memory (bytes)=283136000
+                Peak Reduce Virtual memory (bytes)=2569764864
+        Combiner Status
+                Combiner Input Records=55456685
+                Combiner Invoked=1248862
+                Combiner Output Records=1248862
+                Combiner Setup Called=3
+                Effective Combinations=753925
+                Records Reduced=54207823
+        Partition Counters
+                Partition 0 Records=82400
+                Partition 1 Records=65406
+                Partition 2 Records=64922
+                Partition 3 Records=35777
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        Word Frequency
+                High Frequency Words (>=100)=80582
+                Low Frequency Words (1-9)=892384
+                Medium Frequency Words (10-99)=275896
+        File Input Format Counters 
+                Bytes Read=322882673
+        File Output Format Counters 
+                Bytes Written=2789164
+
+=== Performance Analysis Results ===
+Job completion status: SUCCESS
+Total processing time: 109883 ms (109.883 seconds)
+Combiner enabled: true
+End time: Mon Nov 17 07:34:48 GMT 2025
+
+=== Detailed Performance Metrics ===
+Map Input Records: 6675055
+Map Output Records: 54591717
+Map Output Bytes: 515653676 (491.77 MB)
+
+--- Combiner Performance ---
+Combiner Input Records: 55456685
+Combiner Output Records: 1248862
+Data Reduction by Combiner: 54207823 records (97.75%)
+Combiner Efficiency: 44.41:1
+
+--- Shuffle Performance ---
+Reduce Input Records: 383894
+Reduce Output Records: 248505
+Shuffled Maps: 12
+Spilled Records: 1632756
+Average Bytes per Map Output Record: 9.45
+
+--- Throughput Analysis ---
+Processing Rate: 60746.93 records/second
+Data Processing Rate: 4.48 MB/second
+
+=== Performance Recommendations ===
+? Combiner is HIGHLY EFFECTIVE (reduction rate: 97.75%)
+  Combiner significantly reduces shuffle data volume
+
+--- Partition Balance Analysis ---
+Number of Reduce Tasks: 4
+Expected: Relatively even distribution across partitions
+Verify: Check output files (part-r-00000 to part-r-00003) for size balance
+
+=== Next Steps for Performance Comparison ===
+1. Run the same job with combiner disabled:
+   hadoop jar jar_file WordCountWithPerformanceDriver /public/data/wordcount/all_books_merged.txt /user/s522025320139/homework1/problem2_no_combiner false
+2. Compare the metrics, especially:
+   - Total processing time
+   - Reduce input records (shuffle data volume)
+   - Network I/O and spilled records
+
+=====================================
+Performance analysis completed successfully!

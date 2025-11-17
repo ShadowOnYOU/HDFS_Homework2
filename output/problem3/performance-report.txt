@@ -1,0 +1,9 @@
+total_processing_time	78356
+input_files	1
+input_size_bytes	322620529
+map_tasks_count	700
+reduce_tasks_count	2
+total_words	54591717
+unique_words	248505
+combiner_enabled	true
+combiner_compression_ratio	98.11

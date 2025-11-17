@@ -1,0 +1,4 @@
+input_files	1
+processing_time	167860
+total_words	54591717
+unique_words	248505

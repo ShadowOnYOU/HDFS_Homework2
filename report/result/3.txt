@@ -1,0 +1,153 @@
+hadoop@8daef4e3d21e:~/java_code/hadoop-assignment$ cd /home/hadoop/java_code/hadoop-assignment && hadoop jar hadoop-mapreduce-assignment-1.0-SNAPSHOT.jar com.bigdata.assignment.problem3.WordCountOptimizedDriver /public/data/wordcount/all_books_merged.txt /user/s522025320139/homework1/problem3_bigtest
+WARNING: log4j.properties is not found. HADOOP_CONF_DIR may be incomplete.
+2025-11-16 05:33:30,694 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(60)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Input directory check passed: /public/data/wordcount/all_books_merged.txt
+=== Input Data Analysis ===
+File: all_books_merged.txt, Size: 322620529 bytes
+Total: 1 files, Total size: 322620529 bytes
+Estimated Map tasks: 3 (based on split size: 134217728 bytes)
+=== Starting Optimized MapReduce Job ===
+Start time: Sun Nov 16 05:33:31 GMT 2025
+2025-11-16 05:33:31,067 INFO  [main] client.DefaultNoHARMFailoverProxyProvider (DefaultNoHARMFailoverProxyProvider.java:init(64)) - Connecting to ResourceManager at hadoop-master/172.19.240.155:8032
+2025-11-16 05:33:31,214 WARN  [main] mapreduce.JobResourceUploader (JobResourceUploader.java:uploadResourcesInternal(149)) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2025-11-16 05:33:31,239 INFO  [main] mapreduce.JobResourceUploader (JobResourceUploader.java:disableErasureCodingForPath(907)) - Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/s522025320139/.staging/job_1762952674918_1950
+2025-11-16 05:33:34,458 INFO  [main] input.FileInputFormat (FileInputFormat.java:listStatus(302)) - Total input files to process : 1
+2025-11-16 05:33:34,661 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:submitJobInternal(203)) - number of splits:3
+2025-11-16 05:33:34,850 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(299)) - Submitting tokens for job: job_1762952674918_1950
+2025-11-16 05:33:34,850 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(300)) - Executing with tokens: []
+2025-11-16 05:33:34,994 INFO  [main] conf.Configuration (Configuration.java:getConfResourceAsInputStream(2898)) - resource-types.xml not found
+2025-11-16 05:33:34,994 INFO  [main] resource.ResourceUtils (ResourceUtils.java:addResourcesFileToConf(476)) - Unable to find 'resource-types.xml'.
+2025-11-16 05:33:35,047 INFO  [main] impl.YarnClientImpl (YarnClientImpl.java:submitApplication(356)) - Submitted application application_1762952674918_1950
+2025-11-16 05:33:35,076 INFO  [main] mapreduce.Job (Job.java:submit(1681)) - The url to track the job: http://hadoop-master:8088/proxy/application_1762952674918_1950/
+2025-11-16 05:33:35,092 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1726)) - Running job: job_1762952674918_1950
+2025-11-16 05:33:44,561 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1747)) - Job job_1762952674918_1950 running in uber mode : false
+2025-11-16 05:33:44,564 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 0% reduce 0%
+2025-11-16 05:34:05,386 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 35% reduce 0%
+2025-11-16 05:34:11,614 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 38% reduce 0%
+2025-11-16 05:34:14,778 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 49% reduce 0%
+2025-11-16 05:34:16,839 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 55% reduce 0%
+2025-11-16 05:34:17,868 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 61% reduce 0%
+2025-11-16 05:34:23,134 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 62% reduce 0%
+2025-11-16 05:34:29,389 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 70% reduce 0%
+2025-11-16 05:34:34,578 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 70% reduce 6%
+2025-11-16 05:34:35,615 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 75% reduce 6%
+2025-11-16 05:34:41,870 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 77% reduce 6%
+2025-11-16 05:34:43,947 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 88% reduce 6%
+2025-11-16 05:34:46,025 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 100% reduce 6%
+2025-11-16 05:34:47,064 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 100% reduce 50%
+2025-11-16 05:34:48,120 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1754)) -  map 100% reduce 100%
+2025-11-16 05:34:49,229 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1765)) - Job job_1762952674918_1950 completed successfully
+2025-11-16 05:34:49,365 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1772)) - Counters: 62
+        File System Counters
+                FILE: Number of bytes read=8656223
+                FILE: Number of bytes written=12533144
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=322883072
+                HDFS: Number of bytes written=2789164
+                HDFS: Number of read operations=19
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=4
+                HDFS: Number of bytes read erasure-coded=0
+        Job Counters 
+                Killed map tasks=2
+                Launched map tasks=4
+                Launched reduce tasks=2
+                Data-local map tasks=4
+                Total time spent by all maps in occupied slots (ms)=344188
+                Total time spent by all reduces in occupied slots (ms)=135420
+                Total time spent by all map tasks (ms)=172094
+                Total time spent by all reduce tasks (ms)=33855
+                Total vcore-milliseconds taken by all map tasks=172094
+                Total vcore-milliseconds taken by all reduce tasks=33855
+                Total megabyte-milliseconds taken by all map tasks=176224256
+                Total megabyte-milliseconds taken by all reduce tasks=69335040
+        Map-Reduce Framework
+                Map input records=6675055
+                Map output records=54591717
+                Map output bytes=515653676
+                Map output materialized bytes=3074403
+                Input split bytes=399
+                Combine input records=55249646
+                Combine output records=1041823
+                Reduce input groups=248505
+                Reduce shuffle bytes=3074403
+                Reduce input records=383894
+                Reduce output records=248505
+                Spilled Records=1425717
+                Shuffled Maps =6
+                Failed Shuffles=0
+                Merged Map outputs=6
+                GC time elapsed (ms)=949
+                CPU time spent (ms)=156830
+                Physical memory (bytes) snapshot=2460053504
+                Virtual memory (bytes) snapshot=14640631808
+                Total committed heap usage (bytes)=2089287680
+                Peak Map Physical memory (bytes)=647372800
+                Peak Map Virtual memory (bytes)=2571251712
+                Peak Reduce Physical memory (bytes)=278474752
+                Peak Reduce Virtual memory (bytes)=3470925824
+        Combiner Performance
+                Input Records=55249646
+                Output Records=1041823
+                Records Compressed=54207823
+        Custom Counters
+                Lines Processed=6675055
+                Words Processed=54591717
+        Final Results
+                Total Word Count=54591717
+                Unique Words=248505
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters 
+                Bytes Read=322882673
+        File Output Format Counters 
+                Bytes Written=2789164
+Job execution successful!
+=== Performance Statistics Report ===
+Total execution time: 78356 ms
+End time: Sun Nov 16 05:34:49 GMT 2025
+
+--- Map Phase Performance ---
+Input records: 6675055
+Map output records: 54591717
+HDFS bytes read: 322883072
+Spilled records: 1425717
+Record processing throughput: 85188.82 records/sec
+
+--- Combine Phase Performance ---
+Combine input records: 55249646
+Combine output records: 1041823
+Combine compression rate: 98.11%
+
+--- Reduce Phase Performance ---
+Reduce input records: 383894
+Final unique words: 248505
+HDFS bytes written: 2789164
+
+--- Resource Usage Statistics ---
+GC time: 949 ms
+CPU time: 156830 ms
+Peak physical memory: 2346 MB
+Peak virtual memory: 13962 MB
+
+--- Overall Performance ---
+Data processing throughput: 3.93 MB/sec
+Average word length: 26.86 characters
+
+Results saved to: /user/s522025320139/homework1/problem3_bigtest
+Main result file: /user/s522025320139/homework1/problem3_bigtest/part-r-00000
+Other result files: /user/s522025320139/homework1/problem3_bigtest/part-r-00001
+
+=== Generating Output Files ===
+Reading file: part-r-00000
+Reading file: part-r-00001
+Sorting... Total 248505 words
+word-count-results.txt file generated
+performance-report.txt file generated
